@@ -1,15 +1,15 @@
 name: Testing Pipeline DevOps
 
-This workflow is triggered on a 'push' event to the main branch.
+#This workflow is triggered on a 'push' event to the main branch.
 on:
 push:
 branches:
 - main
 
-A workflow is composed of one or more jobs.
+#A workflow is composed of one or more jobs.
 jobs:
 
-'build' is the name of this job.
+#'build' is the name of this job.
 build:
 # This specifies the environment where the job will run.
 runs-on: ubuntu-latest
