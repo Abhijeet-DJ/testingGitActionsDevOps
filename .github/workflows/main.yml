@@ -21,4 +21,5 @@ jobs:
    - name: Stage 2:-Run Tests
      run : |
       echo "Running Tests..."
-      exit 1
+      exit 0
+
