@@ -13,3 +13,12 @@ jobs:
      uses: actions/checkout@v4
    - name: Pipeline Setup
      run: echo "Hello, GitHub Actions! The pipeline is running."
+   - name: Stage 1:-Build Application
+     run : |
+      echo "Building the Application..."
+      mkdir build
+      echo "Build Successful!"
+   - name: Stage 2:-Run Tests
+     run : |
+      echo "Running Tests..."
+      exit 1
