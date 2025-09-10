@@ -1,27 +1,15 @@
-name: Testing Pipeline DevOps
-
-#This workflow is triggered on a 'push' event to the main branch.
+name:Testing Pipeline DevOps
 on:
 push:
-branches:
+branch:
 - main
 
-#A workflow is composed of one or more jobs.
 jobs:
-
-#'build' is the name of this job.
 build:
-# This specifies the environment where the job will run.
-runs-on: ubuntu-latest
+runs-on:ubuntu-latest
 
-# A job is composed of a series of steps.
 steps:
-  # Step 1: Checks out your repository so the workflow can access your code.
-  # This is a common "action" provided by GitHub.
-  - name: Checkout code
-    uses: actions/checkout@v4
-
-  # Step 2: This is a simple command-line step.
-  # The 'run' keyword executes a command using the shell on the runner.
-  - name: Pipeline Setup
-    run: echo "Hello, GitHub Actions! The pipeline is running."
+- name:Checkout code
+uses:actions/chechout@v4
+- name:Pipeline SetUp
+run:echo "Hello, GitHub Actions! This pipeline is running."
