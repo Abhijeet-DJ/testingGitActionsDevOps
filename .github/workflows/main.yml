@@ -1,15 +1,15 @@
-name:Testing Pipeline DevOps
+name: Testing Pipeline DevOps
+
 on:
 push:
-branch:
+branches:
 - main
 
 jobs:
 build:
-runs-on:ubuntu-latest
-
+runs-on: ubuntu-latest
 steps:
-- name:Checkout code
-uses:actions/chechout@v4
-- name:Pipeline SetUp
-run:echo "Hello, GitHub Actions! This pipeline is running."
+- name: Checkout code
+uses: actions/checkout@v4
+- name: Pipeline Setup
+run: echo "Hello, GitHub Actions! The pipeline is running."
